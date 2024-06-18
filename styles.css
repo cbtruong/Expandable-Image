@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.gallery {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	width: 45rem;
+}
+
+.card {
+	position: relative;
+	left: 0;
+	width: 3rem;
+	border-radius: 5rem;
+	height: 25rem;
+	overflow: hidden;
+	transition: 0.4s ease-in-out;
+	box-shadow: 0 5 12px rgba(0, 0, 0, 0.3);
+	flex: 0.15;
+}
+
+.card img {
+	position: relative;
+	height: 100%;
+	object-fit: cover;
+}
+
+.card:hover {
+	flex:1;
+	cursor: pointer;
+	border-radius: 1rem;
+}
